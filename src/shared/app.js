@@ -6,8 +6,8 @@ export default class App extends Component {
     render() {
         return (
           <div>
-             <Link to="/">PR</Link>
-             <Link to="/work">WORK</Link>
+              <Link to="/">PR</Link>
+              <Link to="/work">WORK</Link>
 
               <Switch>
                   <Route exact path="/" component={Profile} />

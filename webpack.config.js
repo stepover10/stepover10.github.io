@@ -34,13 +34,19 @@ module.exports = (env, argv) => {
         {
           test: /\.s?css$/,
           use: [
-              MiniCssExtractPlugin.loader,
+              'style-loader', // { loader: MiniCssExtractPlugin.loader },
               {
                 loader: 'css-loader',
-                options: { sourceMap: isDev ? true : false }
+                options: {
+                  includePaths: [path.resolve(__dirname, './node_modules')],
+                  sourceMap: isDev ? true : false
+                },
               },{
                 loader: 'sass-loader',
-                options: { sourceMap: isDev ? true : false }
+                options: {
+                  includePaths: [path.resolve(__dirname, './node_modules')],
+                  sourceMap: isDev ? true : false
+                },
               }
           ],
         }

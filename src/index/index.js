@@ -1,4 +1,4 @@
-// import './root.scss';
+import './index.scss';
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Root from 'root/root'
