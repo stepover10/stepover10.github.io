@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'shared/app';
 
 const Root = () => (
-    <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+    <BrowserRouter history={browserHistory} basename={process.env.PUBLIC_URL}>
         <App />
     </BrowserRouter>
 );
