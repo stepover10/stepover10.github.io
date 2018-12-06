@@ -5,23 +5,32 @@
     h1{
         font-size: 3.5em;
         font-weight: 900;
+        position: sticky;
+        top: 135px;
         span{
-            color: var(--main-color);
+            color: var(--main-color);            
         }
     }
+
     .body-left{
         position: absolute;
-        left:0;
-        width: 20%;
+        left: 0;
+        width: 15%;
         height: 100%;
-        border-right: 1px solid #eee;        
+        border-left: 1px solid #e6e6e6;
+        padding: 20px 0;
     }
 
     .body-right{
         position: absolute;
         right:0;
-        width: 80%;
-        height: 100%;
+        width: 85%;
+        height: 100%;                
+    }
+
+    #prHello{
+        padding: 20px;
         background: #f7f7f7;
+        height: 100%;
     }
 }

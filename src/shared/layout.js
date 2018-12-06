@@ -12,7 +12,7 @@ export default class layout extends Component {
 
                 <IntroWrap />
                 
-                <div className="menu-header">
+                <div id="menuHeader" className="menu-header">
                     <div className="logo">
                         YOO.CHAN.HYUN
                     </div>
@@ -22,13 +22,15 @@ export default class layout extends Component {
                     </div>
                 </div>
                
-                <div className="menu-ft-left ps-l">
-                    <i></i>
-                </div>
+                <div id="menuFooter" className="menu-footer">
+                    <div className="menu-ft-left ps-l">
+                        <i></i>
+                    </div>
 
-                <div className="menu-ft-right ps-r">
-                    stepover10@gmail.com
-                </div>                
+                    <div className="menu-ft-right ps-r">
+                        stepover10@gmail.com
+                    </div>             
+                </div>   
 
                 <div id="swithRoute">
                     <Switch>
@@ -63,6 +65,11 @@ class IntroWrap extends Component {
         const isVisited = sessionStorage.getItem('isVisited')
         const getIntro = document.getElementById('introForm')
 
+        const bgColorAdd = () => {
+            document.getElementById('menuHeader').style.background = '#fff'
+            document.getElementById('menuFooter').style.background = '#fff'
+        }
+
         if( !isVisited ){
             
             getIntro.style.display = 'block'
@@ -71,13 +78,16 @@ class IntroWrap extends Component {
                 getIntro.classList.add('intro-form-aniout')
                 setTimeout(()=>{
                     getIntro.style.display = 'none'
-                }, 2000 )
+                    bgColorAdd()
+                }, 1500 )
             }, 2000)
 
             sessionStorage.setItem('isVisited', 'isVisited')
         }else{
+            bgColorAdd()
             getIntro.remove()
-        }    
+        }
+        
     }
 
     render(){

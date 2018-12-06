@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%; 
-    z-index: 9999;               
+    z-index: 10;
     display: none;
     
     .intro-body{
@@ -44,6 +44,7 @@
         transform: scale( 1 );
     }
     100% {       
+        opacity: 0;
         transform: scale( 0 );        
     }
 }
@@ -51,35 +52,27 @@
 #layout-wrap{
     position: relative;
     height: 100%;
-    padding: 100px 50px;    
+    padding: 100px 65px;    
 
     .intro-form-aniout{        
         overflow: hidden;
-        animation: grow 1s cubic-bezier(0.54, 0.5, 0.79, 0.79);
+        animation: grow 0.5s ease-in-out;
         transform: scale( 0 );
     }
-
-    .ps-l{
-        position: fixed;        
-        left: 50px;        
-    }
-    .ps-r{
-        position: fixed;        
-        right: 50px;
-    }
-
+  
     .menu-header{
         position: fixed;
         top: 0px;
         left: 0;
         height: 120px;
         width: 100%;
-        background: #fff;
+        z-index: 11;
+        // background: #fff;
 
         .logo{
             position: absolute;
             top: 45px;
-            left: 47px;
+            left: 65px;
             top: 50px;
             font-size: 2.7em;
             font-weight: 800;        
@@ -88,9 +81,10 @@
         .menu-list{      
             position: absolute;
             top: 40px;
-            right: 25px;
-            font-size: 16px;
+            right: 65px;
+            font-size: 16px;            
             a{                
+                position: relative;
                 display: inline-block;
                 width: 110px;
                 height: 50px;
@@ -116,7 +110,7 @@
                     bottom: 0;
                     display: inline-block;                
                     width: 100%;
-                    border-bottom: 2px solid var(--main-color);
+                    border-bottom: 3px solid var(--main-color);
                     margin-top: 10px;
                     opacity: 0;                
                     transition: opacity 0.35s, transform 0.35s;                
@@ -126,25 +120,35 @@
         }
     }  
 
-
-    .menu-ft-left{
-        bottom: 50px;
-        i{
-            display: block;
-            width: 35px;
-            height: 7px;
-            background: #000;
+    .menu-footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+        width: 100%;
+        height: 110px;    
+        .menu-ft-left{
+            position: absolute;
+            left: 65px;
+            bottom: 50px;
+            i{
+                display: block;
+                width: 35px;
+                height: 7px;
+                background: #000;
+            }
         }
+        .menu-ft-right{    
+            position: absolute;
+            right: 65px;
+            bottom: 50px;
+            font-size: 15px;
+            font-weight: 800;              
+        }    
     }
-
-    .menu-ft-right{    
-        bottom: 50px;
-        font-size: 15px;
-        font-weight: 800;              
-    }    
 }
 
 #swithRoute{    
-    padding: 70px 0;
+    padding: 50px 0;
     height: 100%;
 }
