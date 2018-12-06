@@ -1,0 +1,27 @@
+#profileWrap{
+    position: relative;
+    height: 100%;
+    
+    h1{
+        font-size: 3.5em;
+        font-weight: 900;
+        span{
+            color: var(--main-color);
+        }
+    }
+    .body-left{
+        position: absolute;
+        left:0;
+        width: 20%;
+        height: 100%;
+        border-right: 1px solid #eee;        
+    }
+
+    .body-right{
+        position: absolute;
+        right:0;
+        width: 80%;
+        height: 100%;
+        background: #f7f7f7;
+    }
+}

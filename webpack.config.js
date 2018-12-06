@@ -12,9 +12,9 @@ module.exports = (env, argv) => {
   const Config = {
     entry: {
       // vendor: ["react", "react-dom"],
-      index: PATH_SOURCE + '/index/index.js',
-      root: PATH_SOURCE + '/root/root.js',
-      app: PATH_SOURCE + '/shared/app.js',
+      index  : PATH_SOURCE + '/index/index.js',
+      root   : PATH_SOURCE + '/root/root.js',
+      layout : PATH_SOURCE + '/shared/layout.js',
     },
     module: {
       rules: [
@@ -34,19 +34,14 @@ module.exports = (env, argv) => {
         {
           test: /\.s?css$/,
           use: [
-              'style-loader', // { loader: MiniCssExtractPlugin.loader },
+              MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
-                options: {
-                  includePaths: [path.resolve(__dirname, './node_modules')],
-                  sourceMap: isDev ? true : false
-                },
-              },{
+                options: { sourceMap: isDev ? true : false },
+              },
+              {
                 loader: 'sass-loader',
-                options: {
-                  includePaths: [path.resolve(__dirname, './node_modules')],
-                  sourceMap: isDev ? true : false
-                },
+                options: { sourceMap: isDev ? true : false },
               }
           ],
         }
