@@ -6,7 +6,7 @@
     }
 }
 
-#introForm{
+/*#introForm{
     position: fixed;
     top: 0;
     left: 0;
@@ -27,16 +27,51 @@
         align-items: center; 
         z-index: 9999;
 
-        background: var(--main-color);
+        // background: var(--main-color);
+        background: rgba(60, 64, 80, 0.68);
         transition: 1s;
-        
-        b{
-            font-size: 10em;
-            font-weight: 800;
-            color: #fff;
+
+        .body-in{
+            position: relative;
+            background: #fff;
+            padding: 30px;
+            height: 550px;
+            width: 350px;
+            // border: 11px solid #000;
+            background: var(--main-color);
+
+            .iimg{
+                position: absolute;
+                top: 15px;
+                left: 20px;
+                background: #ca3564;
+                border-radius: 100%;                
+                width: 50px;
+                height: 50px;
+                line-height: 73px;
+                text-align: center;
+                img{                
+                    width: 30px;
+                }
+            }
+            
+            .itext{
+                position: absolute;
+                top: 27%;
+                font-size: 5em;
+                font-weight: 800;
+                color: #fff;
+                .itext-f{
+                    font-size: 0.3em;
+                    color: #fff;
+                    font-weight: 400;
+                    margin: 20px 0 0;
+                    line-height: 22px;
+                }
+            }            
         }
     }        
-}
+}*/
 
 
 @keyframes grow {
@@ -52,7 +87,7 @@
 #layout-wrap{
     position: relative;
     height: 100%;
-    padding: 100px 65px;    
+    padding: 83px 65px;
 
     .intro-form-aniout{        
         overflow: hidden;
@@ -62,25 +97,25 @@
   
     .menu-header{
         position: fixed;
-        top: 0px;
+        top: 0;
         left: 0;
-        height: 120px;
+        height: 70px;
         width: 100%;
         z-index: 11;
+        // border-bottom: 1px solid #ddd;
         // background: #fff;
 
         .logo{
             position: absolute;
-            top: 45px;
-            left: 65px;
-            top: 50px;
+            top: 20px;
+            left: 65px;         
             font-size: 2.7em;
             font-weight: 800;        
         }
 
         .menu-list{      
             position: absolute;
-            top: 40px;
+            top: 10px;
             right: 65px;
             font-size: 16px;            
             a{                
@@ -95,11 +130,11 @@
                 transition: 0.2s;
     
                 &:hover{
-                    background: #f7f7f7;
+                    // background: #f7f7f7;
                     &:after {
                         opacity: 1;
-                          -webkit-transform: scale(1);
-                          transform: scale(1);
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
                       }
                 }
     
@@ -126,29 +161,38 @@
         left: 0;
         z-index: 11;
         width: 100%;
-        height: 110px;    
+        height: 75px;
+        // border-top: 1px solid #ddd;
+
         .menu-ft-left{
             position: absolute;
             left: 65px;
-            bottom: 50px;
+                bottom: 33px;
             i{
                 display: block;
                 width: 35px;
-                height: 7px;
+                height: 4px;
                 background: #000;
             }
         }
+
         .menu-ft-right{    
             position: absolute;
             right: 65px;
-            bottom: 50px;
+            bottom: 33px;
             font-size: 15px;
             font-weight: 800;              
         }    
     }
+
+    .color-point{
+        position: absolute;
+        bottom: 80px;
+        div{
+            width: 10px;
+            height: 10px;            
+        }
+    }
+
 }
 
-#swithRoute{    
-    padding: 50px 0;
-    height: 100%;
-}

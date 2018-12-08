@@ -10,11 +10,11 @@ export default class layout extends Component {
         return (
             <div id="layout-wrap">
 
-                <IntroWrap />
+                {/* <IntroWrap /> */}
                 
                 <div id="menuHeader" className="menu-header">
                     <div className="logo">
-                        YOO.CHAN.HYUN
+                        Yoo_Chan_Hyun_
                     </div>
                     <div className="menu-list">
                         <Link to="/">PROFILE</Link>
@@ -26,11 +26,15 @@ export default class layout extends Component {
                     <div className="menu-ft-left ps-l">
                         <i></i>
                     </div>
-
                     <div className="menu-ft-right ps-r">
                         stepover10@gmail.com
                     </div>             
                 </div>   
+
+                <div className="color-point">
+                    <div style={{background:"#e04c7b"}}></div>
+                    <div style={{background:"#000"}}></div>
+                </div>
 
                 <div id="swithRoute">
                     <Switch>
@@ -70,17 +74,17 @@ class IntroWrap extends Component {
             document.getElementById('menuFooter').style.background = '#fff'
         }
 
-        if( !isVisited ){
+        if( isVisited ){
             
             getIntro.style.display = 'block'
 
-            setTimeout(() => {
-                getIntro.classList.add('intro-form-aniout')
-                setTimeout(()=>{
-                    getIntro.style.display = 'none'
-                    bgColorAdd()
-                }, 1500 )
-            }, 2000)
+            // setTimeout(() => {
+            //     getIntro.classList.add('intro-form-aniout')
+            //     setTimeout(()=>{
+            //         getIntro.style.display = 'none'
+            //         bgColorAdd()
+            //     }, 1500 )
+            // }, 2000)
 
             sessionStorage.setItem('isVisited', 'isVisited')
         }else{
@@ -94,7 +98,25 @@ class IntroWrap extends Component {
         return(
             <div id="introForm">
                 <div className="intro-body">
-                    <b>HELLO.</b>
+                    <div className="body-in">
+                        <div className="iimg">
+                            <img src="/src/img/code.png" />
+                        </div>                     
+
+                        <div className="itext">
+                            Hello.
+                            <div className="itext-f">
+                                안녕하세요<br />
+                                저의 홈페이지에 방문해주셔서<br/>
+                                감사합니다.<br/>
+                                <br/>
+                                홈페이지는<br />
+                                Chrome 브라우저에 최적화 되어있습니다.
+                            </div>
+                        </div>
+
+                        
+                    </div>
                 </div>
             </div>
         )
