@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 export default class PrHello extends Component {
 
     render() {
-      return(        
-            <div id="prHello">
+      return(
+            <div id="prHello" class="hh100">
+              <div id={this.props.arthor} />
 
               <div className="column">
                 <div className="col-3">
@@ -18,12 +19,6 @@ export default class PrHello extends Component {
                     Welcome.<br/>
                     FrontEnd Developer<br/>
                     <span>YOO.CHAN.HYUN</span>
-                    <br/>
-                    <i> >_ </i>
-                    {/* <br/>
-                    안녕하세요.<br/>
-                    프론트엔드 개발자 <br/>
-                    <span>유찬현 입니다</span> */}
                   </div>
                 </div>
 
@@ -57,7 +52,7 @@ export default class PrHello extends Component {
                       <li className="ss"><span>Editor</span> Visual Studio Code</li>
                       <li className="ss"><span>Os</span> Window10</li>
                     </ul>
-
+                              
                     <div className="res-info">
                       해당 사이트는 Chrome 브라우저에서 
                       최적화가 되어있습니다.
@@ -73,8 +68,7 @@ export default class PrHello extends Component {
                   </div>
                 </div>
               </div>
-
-
+              
             </div>      
       )
     }

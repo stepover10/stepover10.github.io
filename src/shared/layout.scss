@@ -115,22 +115,25 @@
 
         .menu-list{      
             position: absolute;
-            top: 10px;
+            top: 0;
             right: 65px;
-            font-size: 16px;            
+            font-size: 16px;
+            background: #000; 
             a{                
                 position: relative;
                 display: inline-block;
-                width: 110px;
-                height: 50px;
-                line-height: 50px;
+                width: 120px;
+                height: 75px;
+                line-height: 75px;
                 text-align: center;
+                color:#fff;
                 font-weight: 800;
                 font-size: 1.2em;
                 transition: 0.2s;
-    
+                
                 &:hover{
-                    // background: #f7f7f7;
+                    background: #f7f7f7;
+                    color:#000;
                     &:after {
                         opacity: 1;
                         -webkit-transform: scale(1);
@@ -186,7 +189,7 @@
     }
 
     .color-point{
-        position: absolute;
+        position: fixed;
         bottom: 80px;
         div{
             width: 10px;
