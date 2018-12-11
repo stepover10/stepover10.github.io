@@ -4,7 +4,7 @@ export default class PrHello extends Component {
 
     render() {
       return(
-            <div id="prHello" class="hh100">
+            <div id="prHello" className="hh100">              
               <div id={this.props.arthor} />
 
               <div className="column">
@@ -25,8 +25,8 @@ export default class PrHello extends Component {
                 <div className="col-3">
                   <div className="pr-center">
                     <div className="pr-img">
-                      <img src="https://dummyimage.com/200x200/fff" />
-                      <img src="https://dummyimage.com/200x200/f6f7f8" />
+                      {/* <img src="https://dummyimage.com/200x200/fff" /> */}
+                      <img src="https://dummyimage.com/200x200/f6f7f8" /><br/>
                       <img src="https://dummyimage.com/200x200/f6f7f8" />
                       <img src="https://dummyimage.com/200x200/f6f7f8" />
                     </div>

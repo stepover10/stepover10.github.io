@@ -11,29 +11,33 @@ export default class layout extends Component {
             <div id="layout-wrap">
 
                 {/* <IntroWrap /> */}
+                {/* <div className="box-sh-hide" /> */}
                 
                 <div id="menuHeader" className="menu-header">
                     <div className="logo">
-                        Yoo_Chan_Hyun_
+                        <img src="/src/img/headersmaile.png" />
                     </div>
                     <div className="menu-list">
                         <Link to="/">PROFILE</Link>
                         <Link to="/work">WORK</Link>                    
                     </div>
-                </div>
+                </div>                
                
-                <div id="menuFooter" className="menu-footer">
+                {/* <div id="menuFooter" className="menu-footer">
                     <div className="menu-ft-left ps-l">
                         <i></i>
                     </div>
                     <div className="menu-ft-right ps-r">
                         stepover10@gmail.com
-                    </div>             
-                </div>   
+                    </div>
+                </div> */}
 
                 <div className="color-point">
-                    <div style={{background:"#e04c7b"}}></div>
-                    <div style={{background:"#000"}}></div>
+                    <b style={{background:"#e04c7b"}}></b>
+                    <b style={{background:"#000"}}></b>
+                    <div className="menu-ft-left">
+                        <i></i>
+                    </div>
                 </div>
 
                 <div id="swithRoute">

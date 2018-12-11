@@ -56,6 +56,7 @@
                     font-weight: 500;
                     color: #aaa;
                     letter-spacing: 2px;
+                    cursor: pointer;
                 }
                 .act{
                     color:#000;
@@ -117,7 +118,7 @@
 
         .pr-center{
             position: relative;
-            height: 100%;            
+            height: 100%;                     
             .pr-img{
                 position: absolute;
                 right: 4px;
@@ -233,12 +234,144 @@
 
         }
     }
-}
 
+    #prExp{
+        position: relative;
+        background: #fbfbfb;        
+        #prExpBody{
+            height: 100%;
+            h1{
+                font-weight: 800;
+                font-size: 1em;                
+                border: 1px solid #000;
+                border-radius: 30px;
+                display: inline-block;
+                padding: 7px 11px;
+            }
+        }
+
+        .exp-form{
+            position: relative;
+            padding: 20px;            
+            transition: 0.3s;
+            height: 100%;
+            transform: scale(0.98);
+
+            &:hover{
+                background: #fff;                
+                transform: scale(1);
+                box-shadow: 1px 1px 17px #dee0ea;
+                h1{                    
+                    border-color: var(--main-color) !important;
+                    background: var(--main-color);
+                    color: #fff;
+                }
+            }
+
+            .exp-detail{
+                position: absolute;
+                bottom: 150px;
+                left: 32px;
+                background: #000;
+                color: #fff;
+                padding: 11px 14px;
+                font-size: 1.3em;
+                display: inline-block;
+                /* margin: 45px 0 0; */
+                cursor: pointer;
+                transition: 0.1s;
+                z-index: 20;
+                &:hover{
+                    background: var(--main-color);
+                    border-radius: 30px;
+                    color:#fff;
+                }
+            }
+
+            .i-point{
+                position: absolute;
+                top: 47px;
+                right: -13px;
+                background: #eaeaea;
+                color: #a5a5a5;
+                padding: 5px 10px;
+                font-size: 1em;
+                transform: rotate(90deg)
+            }
+
+            .form-a{
+                position: relative;
+                height: 100%;
+                padding-top: 60px;
+
+                .exp-left{
+                    float: left;                  
+                }
+                .exp-right{
+                    position: relative;
+                    // top: 0;
+                    // right: 0;
+                    float: right;
+                    height: 90%;           
+                    background: #f7f7f7;                    
+                    width: 66.6%;
+                    transition: 0.3s;                    
+                }                
+
+                h2{
+                    font-weight: 800;
+                    font-size: 1.8em;
+                    margin: 0 0 10px;                
+                }
+                .date{
+                    font-size: 1.3em;
+                    margin: 0 0 5px;
+                    color: #969696;
+                }
+                .position{
+                    font-size: 1.4em;
+                    text-decoration: underline;
+                }              
+
+                .project-list{
+                    margin-top: 50px;
+                    h3{
+                        font-size: 1.3em;
+                        margin: 0 0 18px;
+                        color: var(--main-color);
+                        font-weight: 700;
+                    }
+                    ul{
+                        border-left: 2px solid #444;
+                        padding: 0 0 0 12px;
+                        li{
+                            font-size: 1.3em;
+                            margin: 0 0 20px;
+                            h4{
+                                font-weight: 800;
+                                margin: 0 0 5px;
+                            }
+                            span{
+                                font-size: 1.1em;
+                                padding-left: 5px;
+                            }
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 1600px) {
     .column .col-3 {
         width: 28%;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    #profileWrap #prExp .exp-form .form-a .exp-right{
+        width: 55%;
     }
 }
