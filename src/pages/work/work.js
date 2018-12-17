@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class Work extends Component {
     componentDidMount(){
-      console.log('Render-Work')
+      // console.log('Render-Work')
     }
 
     render() {

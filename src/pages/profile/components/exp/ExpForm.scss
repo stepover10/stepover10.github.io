@@ -1,0 +1,97 @@
+.exp-form-wrap{
+    position: relative;
+    color:#000;
+    // height: 100%;
+    padding: 15px;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+    // -webkit-overflow-scrolling: touch;
+    // -webkit-backface-visibility: hidden; 
+    // font-size: 1.2em;/
+
+    .eheader{
+        font-size: 1em;
+        letter-spacing: 2px;     
+        margin-bottom: 20px;   
+    }    
+    .eheader-desc{
+        margin: 0 0 40px;
+        b{
+            display: block;
+            margin: 0 0 14px;
+            font-size: 1.7em;
+            font-weight: 600;            
+        }
+        ul{
+            li{
+                font-size: 1.4em;
+                margin: 0 0 5px;
+            }
+        }
+    }
+
+    .elist-form{
+        .elist-li{
+            // border-left: 1px solid #c3c3c3;
+            margin: 0 0 35px;
+        }
+        .elist-header{
+            position: relative;
+            // border-left: 2px solid var(--main-color);
+            // padding-left: 10px;
+            font-size: 1.6em;
+            font-weight: 800;
+            margin: 0 0 10px;
+            span{
+                position: absolute;
+                top: -6px;
+                right: 0;
+                font-size: 0.7em;
+                font-weight: 300;
+                // background: #eaeaea;
+                color: #717171;
+                padding: 6px 9px;
+                &:hover{
+                    background: var(--main-color);
+                    color: #fff;
+                }
+            }            
+        }
+
+        .elist-desc{
+            border-left: 1px solid #cecece;
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            line-height: 20px;
+            padding-left: 10px;
+            margin: 0 0 0 15px;
+        }
+
+        .elist-position{
+            padding-left: 20px;
+            margin-bottom: 30px;
+            .ip{
+                padding: 5px 9px;
+                font-size: 1.1em;
+                display: inline-block;
+                margin: 0 0 12px;                          
+            }
+            .e1{
+                border: 1px solid #3cb740;
+                color: #3cb740;
+            }
+            .e2{
+                border: 1px solid #64a9ff;
+                color: #64a9ff;
+            }
+            ul{
+                padding-left: 15px;
+                li{
+                    font-size: 1.4em;
+                    margin-bottom: 5px;            
+                }
+            }
+        }
+        
+    }
+}

@@ -1,7 +1,7 @@
-import './profile.scss';
+import './Profile.scss';
 import React, { Component } from 'react';
-import PrHello from './components/pr_hello';
-import PrExp from './components/pr_exp';
+import PrHello from './components/PrHello';
+import PrExp from './components/PrExp';
 
 export default class Profile extends Component {
 
@@ -31,9 +31,9 @@ export default class Profile extends Component {
             document.getElementById( this.getAttribute('data-href') ).scrollIntoView({
                block: 'start',  
                behavior: 'smooth'
-            });
-        });
-    });
+            })
+        })
+      })
     }
 
     render() {

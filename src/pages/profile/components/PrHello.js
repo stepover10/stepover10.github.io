@@ -22,15 +22,13 @@ export default class PrHello extends Component {
                   </div>
                 </div>
 
-                <div className="col-3">
-                  <div className="pr-center">
+                <div className="col-3">              
                     <div className="pr-img">
                       {/* <img src="https://dummyimage.com/200x200/fff" /> */}
                       <img src="https://dummyimage.com/200x200/f6f7f8" /><br/>
                       <img src="https://dummyimage.com/200x200/f6f7f8" />
                       <img src="https://dummyimage.com/200x200/f6f7f8" />
-                    </div>
-                  </div>
+                    </div>              
                 </div>
 
                 <div className="col-3">

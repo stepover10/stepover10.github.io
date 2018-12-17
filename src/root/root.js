@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import React, { Component } from 'react';
+import { HashRouter } from 'react-router-dom';
 import Layout from 'shared/layout';
 
 const Root = () => (
-    <HashRouter>
-        <Layout />
+    <HashRouter>   
+            <Layout />           
     </HashRouter>
 );
 

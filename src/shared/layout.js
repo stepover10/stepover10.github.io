@@ -1,12 +1,31 @@
 import './layout.scss'
 import React, { Component } from 'react';
 import { HashRouter, Route, Link, Switch } from 'react-router-dom';
-import Profile from 'pages/profile/profile';
+import Profile from 'pages/profile/Profile';
 import Work from 'pages/work/work';
 
 export default class layout extends Component {
    
+    componentDidMount(){
+        this.scrollPosition()
+    }
+
+    scrollData(url, event){               
+        layout.scrollTopData = window.scrollY
+        location.href = url
+    }
+
+    scrollPosition(){
+        // window.scrollY
+        window.onpopstate = (event) => {
+            console.log( event )
+        }
+    }
+
     render() {
+        
+        // this.scrollPosition()
+
         return (
             <div id="layout-wrap">
 
@@ -18,8 +37,8 @@ export default class layout extends Component {
                         <img src="/src/img/headersmaile.png" />
                     </div>
                     <div className="menu-list">
-                        <Link to="/">PROFILE</Link>
-                        <Link to="/work">WORK</Link>                    
+                        <a onClick={this.scrollData.bind(this, '#/')}>PROFILE</a>
+                        <a onClick={this.scrollData.bind(this, '#/work')}>WORK</a>                    
                     </div>
                 </div>                
                
@@ -66,7 +85,7 @@ export default class layout extends Component {
 class IntroWrap extends Component {
 
     componentDidMount(){
-        this.introAnimain()
+        // this.introAnimain()
     }
 
     introAnimain(){

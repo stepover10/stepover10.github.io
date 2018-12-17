@@ -1,19 +1,19 @@
 #swithRoute{    
     padding: 0px 0 10px;
-    height: 100%;
+    // height: 100%;
     // overflow: hidden;
 }
 
 
 #profileWrap{
     position: relative;
-    height: 100%;      
+    // height: 100%;      
 
     .body-left{
         position: fixed;
         left: 73px;
         width: 15%;
-        height: 100%;
+        // height: 100%;
         padding: 50px 0;
         /* border-left: 1px solid #e6e6e6; */
         /* padding: 0 0 0 20px; */
@@ -72,21 +72,16 @@
         position: absolute;
         right:0;
         width: 85%;
-        height: 100%;                
+        // height: 100%;                
     }
 
-    .hh100{
-        height: 100%;
-        padding: 20px;
-    }
-
-    #prHello{
+     #prHello{
         .column{
-            height: 100%;
+            // height: 100%;
         }
         .col-3{
             position: relative;
-            height: 100%;
+            // height: 100%;
             // border-right: 1px solid #ddd;
         }
 
@@ -116,17 +111,13 @@
                 font-weight: 800;
             }
         }
-
-        .pr-center{
-            position: relative;
-            height: 100%;                     
-            .pr-img{
-                position: absolute;
-                right: 4px;
-                bottom: 0;
-                text-align: right;                
-            }
-        }
+                         
+        .pr-img{
+            position: absolute;
+            right: 4px;
+            bottom: 0;
+            text-align: right;                
+        }   
 
         .pr-res{
             position: absolute;
@@ -153,7 +144,7 @@
             .line{
                 position: fixed;
                 left:0;
-                height: 100%;
+                // height: 100%;
                 border-left:1px solid #ddd;
             }
 
@@ -240,7 +231,7 @@
         position: relative;
         background: #fbfbfb;        
         #prExpBody{
-            height: 100%;
+            // height: 100%;
             h1{
                 font-weight: 800;
                 font-size: 1em;                
@@ -255,7 +246,7 @@
             position: relative;
             padding: 20px;            
             transition: 0.3s;
-            height: 100%;
+            // height: 100%;
             transform: scale(0.98);
 
             &:hover{
@@ -275,10 +266,11 @@
                 left: 32px;
                 background: #000;
                 color: #fff;
-                padding: 11px 14px;
+                padding: 11px 0;
+                width: 200px;
                 font-size: 1.3em;
                 display: inline-block;
-                /* margin: 45px 0 0; */
+                text-align: center;
                 cursor: pointer;
                 transition: 0.1s;
                 z-index: 20;
@@ -302,7 +294,7 @@
 
             .form-a{
                 position: relative;
-                height: 100%;
+                // height: 100%;
                 padding-top: 60px;
 
                 .exp-left{
@@ -349,15 +341,26 @@
                             font-size: 1.3em;
                             margin: 0 0 20px;
                             h4{
+                                font-size: 1.2em;
                                 font-weight: 800;
                                 margin: 0 0 5px;
                             }
-                            span{
-                                font-size: 1.1em;
-                                padding-left: 5px;
-                            }
+                            .hash{
+                                font-size: 0.8em;
+                                // padding: 0 8px;
+                                height: 13px;
+                                line-height: 13px;
+                                /* background: #4744ff; */
+                                color: #2e9dff;
+                                display: inline-block;
+                                margin-right: 5px;
+                                font-weight: bold;
+                                &:before{
+                                    content: '#'
+                                }
+                            }                            
                         }
-                    }                    
+                    }               
                 }
             }
         }
